@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../images/logo.png">
+</head>
+<body>
+       <!--navbar-->  
+       <div class="nav">
+        <div class="nav-content"><a href="../home.html">Home</a><a href="info.html">Info</a><a href="gallery.html">Gallery</a><a href="lodging.html">Visit</a></div>
+        <div class="dropdown">
+            <button class="dropbtn">Extras 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="winter.html">Visiting In Winter</a>
+                <a href="tire.html">Tire Chain Requirements</a>
+                <a href="wilderness.html">Wilderness Permits</a>
+                <a href="halfdome.html">Half Dome Permits</a>
+                <a href="waterfalls.html">Waterfalls</a>
+            </div>
+          </div> 
+    </div>
+    <!--navbar--> 
+    <div class="main">
+    <div class="main-in">
+    <h1>Gallery<p style="font-size: 12px;">Click on a photo to expand and click again to exit</p></h1>
+    <h3>Photos</h3>    
+    </div>
+    <div class="gallery">
+        <img class="gimg" src="../images/Photos/20040626_134729.JPG" alt="Image" onclick="openModal('../images/Photos/20040626_134729.JPG')">
+        <img class="gimg" src="../images/Photos/20040626_134747.JPG" alt="Image" onclick="openModal('../images/Photos/20040626_134747.JPG')">
+        <img class="gimg" src="../images/Photos/20040626_135410.JPG" alt="Image" onclick="openModal('../images/Photos/20040626_135410.JPG')">
+        <img class="gimg" src="../images/Photos/20040626_135457.JPG" alt="Image" onclick="openModal('../images/Photos/20040626_135457.JPG')">
+        <img class="gimg" src="../images/bridalveil.JPG" alt="Image" onclick="openModal('../images/bridalveil.JPG')">
+        <img class="gimg" src="../images/Photos/20040626_135714.JPG" alt="Image" onclick="openModal('../images/Photos/20040626_135714.JPG')">
+        <img class="gimg" src="../images/Photos/20040626_142059.JPG" alt="Image" onclick="openModal('../images/Photos/20040626_142059.JPG')">
+        <img class="gimg" src="../images/Photos/20040626_142537.JPG" alt="Image" onclick="openModal('../images/Photos/20040626_142537.JPG')">
+        <img class="gimg" src="../images/Photos/20040626_143508.JPG" alt="Image" onclick="openModal('../images/Photos/20040626_143508.JPG')">
+        <img class="gimg" src="../images/Photos/20040626_154610.JPG" alt="Image" onclick="openModal('../images/Photos/20040626_154610.JPG')">
+        <img class="gimg" src="../images/Photos/20040626_161051.JPG" alt="Image" onclick="openModal('../images/Photos/20040626_161051.JPG')">
+        <img class="gimg" src="../images/Photos/20040626_161253.JPG" alt="Image" onclick="openModal('../images/Photos/20040626_161253.JPG')">
+        <img class="gimg" src="../images/Photos/20040626_175841.JPG" alt="Image" onclick="openModal('../images/Photos/20040626_175841.JPG')">
+        <img class="gimg" src="../images/Photos/20040626_180440.JPG" alt="Image" onclick="openModal('../images/Photos/20040626_180440.JPG')">
+        <img class="gimg" src="../images/Photos/20050604_144036_Original.JPG" alt="Image" onclick="openModal('../images/Photos/20050604_144036_Original.JPG')">
+        <img class="gimg" src="../images/Photos/20050604_145001_Original.JPG" alt="Image" onclick="openModal('../images/Photos/20050604_145001_Original.JPG')">
+        <img class="gimg" src="../images/Photos/20050604_152558_Original.JPG" alt="Image" onclick="openModal('../images/Photos/20050604_152558_Original.JPG')">
+        
+        <img class="gimg" src="../images/Photos/20050604_164505_Original.JPG" alt="Image" onclick="openModal('../images/Photos/20050604_164505_Original.JPG')">
+        <img class="gimg" src="../images/Photos/20050904_111736_Original.JPG" alt="Image" onclick="openModal('../images/Photos/20050904_111736_Original.JPG')">
+        <img class="gimg" src="../images/Photos/20050904_123752_Original.JPG" alt="Image" onclick="openModal('../images/Photos/20050904_123752_Original.JPG')">
+        <img class="gimg" src="../images/Photos/20050904_201002_Original.JPG" alt="Image" onclick="openModal('../images/Photos/20050904_201002_Original.JPG')">
+        <img class="gimg" src="../images/Photos/20050905_131115_Original.JPG" alt="Image" onclick="openModal('../images/Photos/20050905_131115_Original.JPG')">
+        <img class="gimg" src="../images/Photos/20050905_131837_Original.JPG" alt="Image" onclick="openModal('../images/Photos/20050905_131837_Original.JPG')">
+        <img class="gimg" src="../images/Photos/20050905_132413_Original.JPG" alt="Image" onclick="openModal('../images/Photos/20050905_132413_Original.JPG')">
+    </div>
+    <div class="main-in">
+    <h3>Wallpapers</h3>
+    </div>
+    <div class="gallery">
+    <img class="gimg" src="../images/yosemite.png" alt="Image" onclick="openModal('../images/yosemite.png')">
+    <img class="gimg" src="../images/lake.png" alt="Image" onclick="openModal('../images/lake.png')">
+    <img class="gimg" src="../images/yosemite-2.jpg" alt="Image" onclick="openModal('../images/yosemite-2.jpg')">
+    <img class="gimg" src="../images/yosemite-3.jpg" alt="Image" onclick="openModal('../images/yosemite-3.jpg')">
+    <img class="gimg" src="../images/yosemite-4.jpg" alt="Image" onclick="openModal('../images/yosemite-4.jpg')">
+    <img class="gimg" src="../images/winter.jpg" alt="Image" onclick="openModal('../images/winter.jpg')">
+    </div>
+    </div>
+    <div id="modal" class="modal" onclick="closeModal()">
+        <img id="modalImg" src="" alt="Modal Image">
+    </div>
+    <div class="disclaimer">
+        View the original version <a href="gallery2.html">Here</a>
+    </div>
+<script>
+        function openModal(imageSrc) {
+            document.getElementById('modalImg').src = imageSrc;
+            document.getElementById('modal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('modalImg').src = '';
+            document.getElementById('modal').style.display = 'none';
+        }
+</script>
+</body>
+</html>
